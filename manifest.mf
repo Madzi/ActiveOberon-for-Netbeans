@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ru.madzi.aos
+OpenIDE-Module-Layer: ru/madzi/aos/layer.xml
+OpenIDE-Module-Localizing-Bundle: ru/madzi/aos/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

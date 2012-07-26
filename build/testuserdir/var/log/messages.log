@@ -1,0 +1,424 @@
+-------------------------------------------------------------------------------
+>Log Session: Thursday, July 26, 2012 11:41:07 AM MSK
+>System Info: 
+  Product Version         = NetBeans IDE 7.1.2 (Build 201204101705) (#0d549f9bc1e4)
+  Operating System        = Windows 7 version 6.1 running on amd64
+  Java; VM; Vendor        = 1.7.0_03; Java HotSpot(TM) 64-Bit Server VM 22.1-b02; Oracle Corporation
+  Runtime                 = Java(TM) SE Runtime Environment 1.7.0_03-b05
+  Java Home               = C:\Program Files\Java\jdk1.7.0_03\jre
+  System Locale; Encoding = en_US (nb); Cp1252
+  Home Directory          = C:\Users\deliseev
+  Current Directory       = C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support
+  User Directory          = C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\testuserdir
+  Cache Directory         = C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\testuserdir\var\cache
+  Installation            = C:\Program Files\NetBeans 7.1.2\nb
+                            C:\Program Files\NetBeans 7.1.2\ergonomics
+                            C:\Program Files\NetBeans 7.1.2\ide
+                            C:\Program Files\NetBeans 7.1.2\java
+                            C:\Program Files\NetBeans 7.1.2\apisupport
+                            C:\Program Files\NetBeans 7.1.2\websvccommon
+                            C:\Program Files\NetBeans 7.1.2\enterprise
+                            C:\Program Files\NetBeans 7.1.2\mobility
+                            C:\Program Files\NetBeans 7.1.2\profiler
+                            C:\Program Files\NetBeans 7.1.2\php
+                            C:\Program Files\NetBeans 7.1.2\harness
+                            C:\Program Files\NetBeans 7.1.2\cnd
+                            C:\Program Files\NetBeans 7.1.2\dlight
+                            C:\Program Files\NetBeans 7.1.2\groovy
+                            C:\Program Files\NetBeans 7.1.2\extra
+                            C:\Program Files\NetBeans 7.1.2\javacard
+                            C:\Program Files\NetBeans 7.1.2\javafx
+                            C:\Program Files\NetBeans 7.1.2\stableuc
+                            C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\cluster
+                            C:\Program Files\NetBeans 7.1.2\platform
+  Boot & Ext. Classpath   = C:\Program Files\Java\jdk1.7.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_03\jre\classes;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\zipfs.jar
+  Application Classpath   = C:\Program Files\NetBeans 7.1.2\platform\lib\boot.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\org-openide-modules.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\org-openide-util-lookup.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\org-openide-util.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\boot_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\boot_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\boot_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\boot_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-modules_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-modules_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-modules_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-modules_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util-lookup_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util-lookup_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util-lookup_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util-lookup_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\lib\locale\org-openide-util_zh_CN.jar;C:\Program Files\Java\jdk1.7.0_03\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_03\lib\tools.jar
+  Startup Classpath       = C:\Program Files\NetBeans 7.1.2\platform\core\core.jar;C:\Program Files\NetBeans 7.1.2\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar
+-------------------------------------------------------------------------------
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: no code name base passed when looking up var/license_accepted at org.netbeans.core.startup.Main$1LicenseHandler.shouldDisplayLicense(Main.java:463)
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.netbeans.modules.web.jsf12ri in C:\Program Files\NetBeans 7.1.2\enterprise does not own modules/ext/glassfish-jspparser-3.0.jar at org.netbeans.LocaleVariants.findLogicalPath(LocaleVariants.java:270)
+WARNING [org.netbeans.core.modules]: the modules [org.netbeans.modules.db.sql.editor, org.netbeans.modules.editor.structure, org.netbeans.modules.xml.text] use org.netbeans.modules.editor.deprecated.pre65formatting which is deprecated.
+WARNING [org.openide.filesystems.Ordering]: Not all children in Services/MIMEResolver/ marked with the position attribute: [AoResolver.xml], but some are: [instance-mime-resolver.xml, org-netbeans-modules-java-mime-resolver.xml, org-netbeans-modules-image-mime-resolver.xml, org-netbeans-modules-properties-mime-resolver.xml, Manifest.xml, Ini.xml, FormResolver.xml, mime-resolver-name-ext.xml, mime-resolver.xml, plain-text-resolver.xml, VMDResolver.xml, cssResolver.xml, Diff.xml, javascript.xml, sql-resolver.xml, JnlpResolver.xml, cnd-source-resolver-ext-based.xml, cnd-ext-based-mime-resolver2.xml, PUResolver.xml, SVGPaletteItemResolver.xml, GspResolver.xml, SVGResolver.xml, JavacardPlatformResolver.xml, JavaCardResolver.xml, YAML.xml, GroovyMimeResolver.xml, PHPMimeResolver.xml, html.xml, POMResolver.xml, org-apache-tools-ant-module-mime-resolver.xml, org-netbeans-modules-apisupport-layer-resolver.xml, org-netbeans-modules-editor-settings-storage-mime-resolver.xml, org-netbeans-modules-j2ee-ddloaders-resources-mime-resolver.xml, org-netbeans-modules-j2ee-sun-share-mime-resolver.xml, org-netbeans-modules-url-mime-resolver.xml, org-netbeans-modules-pdf-mime-resolver.xml, tpl-mime-resolver.xml, org-netbeans-modules-tomcat5-resolver.xml, org-netbeans-modules-web-core-resources-mime-resolver.xml, org-netbeans-modules-web-jsf-resources-mime-resolver.xml, org-netbeans-modules-web-struts-resources-mime-resolver.xml, SpringXMLConfigResolver.xml, xslt-mime-resolver.xml, org-netbeans-modules-hudson-maven-mime-resolver.xml, AsmResolver.xml, cnd-source-resolver-content-based.xml, org-netbeans-modules-jar-mime-resolver.xml, org-nb-mod-jaxb-binding-resolver.xml, cnd-hex-based-mime-resolver.xml, org-netbeans-modules-editor-codetemplates-mime-resolver.xml, org-netbeans-modules-editor-macros-mime-resolver.xml, LResolver.xml, XResolver.xml, text-x-oql-mime-resolver.xml, org-netbeans-modules-mobility-end2end-mime-resolver.xml, org-netbeans-modules-dbschema-mime-resolver.xml, HibernateCfgResolver.xml, HibernateMappingResolver.xml, HibernateRevengResolver.xml, text-hql-mime-resolver.xml, ApduResolver.xml, fxml.xml, SwingPaletteItemResolver.xml, org-netbeans-modules-xml-services-XMLMIMEResolver.xml, org-netbeans-modules-xml-services-DTDMIMEResolver.xml, org-netbeans-modules-xml-services-ENTMIMEResolver.xml, FreemarkerResolver.xml, org-netbeans-modules-apisupport-hidden-resolver.xml, php-project-mime-resolver.xml, NpssResolver.xml, NpsResolver.xml, DummyHprofResolver.xml, org-netbeans-modules-xml-services-FallbackXMLResolver.xml, HintResolver.xml, DeclarativeHintsTestResolver.xml]
+WARNING [org.openide.filesystems.Ordering]: Not all children in Services/MIMEResolver/ marked with the position attribute: [AoResolver.xml], but some are: [instance-mime-resolver.xml, org-netbeans-modules-java-mime-resolver.xml, org-netbeans-modules-image-mime-resolver.xml, org-netbeans-modules-properties-mime-resolver.xml, Manifest.xml, Ini.xml, FormResolver.xml, mime-resolver-name-ext.xml, mime-resolver.xml, plain-text-resolver.xml, VMDResolver.xml, cssResolver.xml, Diff.xml, javascript.xml, sql-resolver.xml, JnlpResolver.xml, cnd-source-resolver-ext-based.xml, cnd-ext-based-mime-resolver2.xml, PUResolver.xml, SVGPaletteItemResolver.xml, GspResolver.xml, SVGResolver.xml, JavacardPlatformResolver.xml, JavaCardResolver.xml, YAML.xml, GroovyMimeResolver.xml, PHPMimeResolver.xml, html.xml, POMResolver.xml, org-apache-tools-ant-module-mime-resolver.xml, org-netbeans-modules-apisupport-layer-resolver.xml, org-netbeans-modules-editor-settings-storage-mime-resolver.xml, org-netbeans-modules-j2ee-ddloaders-resources-mime-resolver.xml, org-netbeans-modules-j2ee-sun-share-mime-resolver.xml, org-netbeans-modules-url-mime-resolver.xml, org-netbeans-modules-pdf-mime-resolver.xml, tpl-mime-resolver.xml, org-netbeans-modules-tomcat5-resolver.xml, org-netbeans-modules-web-core-resources-mime-resolver.xml, org-netbeans-modules-web-jsf-resources-mime-resolver.xml, org-netbeans-modules-web-struts-resources-mime-resolver.xml, SpringXMLConfigResolver.xml, xslt-mime-resolver.xml, org-netbeans-modules-hudson-maven-mime-resolver.xml, AsmResolver.xml, cnd-source-resolver-content-based.xml, org-netbeans-modules-jar-mime-resolver.xml, org-nb-mod-jaxb-binding-resolver.xml, cnd-hex-based-mime-resolver.xml, org-netbeans-modules-editor-codetemplates-mime-resolver.xml, org-netbeans-modules-editor-macros-mime-resolver.xml, LResolver.xml, XResolver.xml, text-x-oql-mime-resolver.xml, org-netbeans-modules-mobility-end2end-mime-resolver.xml, org-netbeans-modules-dbschema-mime-resolver.xml, HibernateCfgResolver.xml, HibernateMappingResolver.xml, HibernateRevengResolver.xml, text-hql-mime-resolver.xml, ApduResolver.xml, fxml.xml, SwingPaletteItemResolver.xml, org-netbeans-modules-xml-services-XMLMIMEResolver.xml, org-netbeans-modules-xml-services-DTDMIMEResolver.xml, org-netbeans-modules-xml-services-ENTMIMEResolver.xml, FreemarkerResolver.xml, org-netbeans-modules-apisupport-hidden-resolver.xml, php-project-mime-resolver.xml, NpssResolver.xml, NpsResolver.xml, DummyHprofResolver.xml, org-netbeans-modules-xml-services-FallbackXMLResolver.xml, HintResolver.xml, DeclarativeHintsTestResolver.xml]
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: no code name base passed when looking up build_info at org.netbeans.modules.uihandler.BuildInfo.logBuildInfo(BuildInfo.java:84)
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/app_framework.xml in Default System, reason: Cannot create library: swing-app-framework of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/MySQLDriver.xml in Default System, reason: Cannot create library: MySQLDriver of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/junit.xml in Default System, reason: Cannot create library: junit of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/PostgreSQLDriver.xml in Default System, reason: Cannot create library: PostgreSQLDriver of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/junit_4.xml in Default System, reason: Cannot create library: junit_4 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/CopyLibs.xml in Default System, reason: Cannot create library: CopyLibs of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jsp-compiler.xml in Default System, reason: Cannot create library: jsp-compiler of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/spring-framework300.xml in Default System, reason: Cannot create library: spring-framework300 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/JAXB-ENDORSED.xml in Default System, reason: Cannot create library: JAXB-ENDORSED of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jsp-compilation-syscp.xml in Default System, reason: Cannot create library: jsp-compilation-syscp of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/hibernate-persistence.xml in Default System, reason: Cannot create library: hibernate-persistence of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/JWSAntTasks.xml in Default System, reason: Cannot create library: JWSAntTasks of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/netbeans_midp_wma.xml in Default System, reason: Cannot create library: NetBeans MIDP Components WMA of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jmunit4cldc11.xml in Default System, reason: Cannot create library: JMUnit4CLDC11 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jsp-compilation.xml in Default System, reason: Cannot create library: jsp-compilation of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/groovy-all.xml in Default System, reason: Cannot create library: groovy-all of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/spring-webmvc-3.0.xml in Default System, reason: Cannot create library: spring-webmvc3.0 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/spring-framework.xml in Default System, reason: Cannot create library: spring-framework of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/ejb3-persistence.xml in Default System, reason: Cannot create library: ejb3-persistence of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jsf20.xml in Default System, reason: Cannot create library: jsf20 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/netbeans_midp.xml in Default System, reason: Cannot create library: NetBeans MIDP Components of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/cdc-pp-awt-layout.xml in Default System, reason: Cannot create library: cdc-pp-awt-layout of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/swing-layout.xml in Default System, reason: Cannot create library: swing-layout of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jstl11.xml in Default System, reason: Cannot create library: jstl11 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/nokiadeploymentmodule.xml in Default System, reason: Cannot create library: nokiadeployment of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/hibernate.xml in Default System, reason: Cannot create library: hibernate-support of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/savaje-ant-utils.xml in Default System, reason: Cannot create library: savaje-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/javac-library.xml in Default System, reason: Cannot create library: javac-api of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/pim.xml in Default System, reason: Cannot create library: DataBindingME-PIM of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/swdp.xml in Default System, reason: Cannot create library: restlib of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/ojec-ant-utils.xml in Default System, reason: Cannot create library: ojec-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/absolutelayout.xml in Default System, reason: Cannot create library: absolutelayout of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/nb_svg_midp.xml in Default System, reason: Cannot create library: nb_svg_midp_components of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/mobility-ant-ext.xml in Default System, reason: Cannot create library: j2me_ant_ext of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/cdc-ant-utils.xml in Default System, reason: Cannot create library: cdc-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/svg.xml in Default System, reason: Cannot create library: DataBindingME-SVG of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/ant-contrib.xml in Default System, reason: Cannot create library: ant-contrib of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/eclipselinkmodelgen.xml in Default System, reason: Cannot create library: eclipselinkmodelgen of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jsf12.xml in Default System, reason: Cannot create library: jsf12 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jaxws21.xml in Default System, reason: Cannot create library: jaxws21 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/metro.xml in Default System, reason: Cannot create library: metro of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jakarta-slide-ant-webdav.xml in Default System, reason: Cannot create library: jakarta_slide_ant_webdav of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/eclipselink.xml in Default System, reason: Cannot create library: eclipselink of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/jmunit4cldc10.xml in Default System, reason: Cannot create library: JMUnit4CLDC10 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/javaee-api-6.0.xml in Default System, reason: Cannot create library: javaee-api-6.0 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/struts.xml in Default System, reason: Cannot create library: struts of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/nokiaS80-ant-utils.xml in Default System, reason: Cannot create library: nokiaS80-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/beans_binding.xml in Default System, reason: Cannot create library: beans-binding of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/javaee-web-api-6.0.xml in Default System, reason: Cannot create library: javaee-web-api-6.0 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/databindingme.xml in Default System, reason: Cannot create library: DataBindingME of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/semc-ant-utils.xml in Default System, reason: Cannot create library: semc-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/primefaces.xml in Default System, reason: Cannot create library: primefaces of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/toplink.xml in Default System, reason: Cannot create library: toplink of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/spring-webmvc-2.5.xml in Default System, reason: Cannot create library: spring-webmvc of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/javaee-endorsed-api-6.0.xml in Default System, reason: Cannot create library: javaee-endorsed-api-6.0 of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/netbeans_midp_pda.xml in Default System, reason: Cannot create library: NetBeans MIDP Components PDA of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/restapi.xml in Default System, reason: Cannot create library: restapi of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/sjmc-ant-utils.xml in Default System, reason: Cannot create library: sjmc-ant-utils of unknown type: j2se
+INFO [org.netbeans.modules.project.libraries.LibrariesStorage]: Cannot load library from file org-netbeans-api-project-libraries/Libraries/cdc-agui-swing-layout.xml in Default System, reason: Cannot create library: cdc-agui-swing-layout of unknown type: j2se
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	org.openide.util.lookup [8.11.1 201204101705]
+	org.openide.util [8.19.2 201204101705]
+	org.openide.modules [7.27.1 201204101705]
+	org.openide.filesystems [7.53.2 201204101705]
+	org.openide.awt [7.39.1 201204101705]
+	org.netbeans.modules.editor.util/1 [1.45.2 201204101705]
+	org.netbeans.modules.lexer/2 [1.42.2.1 1 201204101705]
+	org.netbeans.api.progress/1 [1.26.1 201204101705]
+	org.openide.dialogs [7.23.1 201204101705]
+	org.openide.nodes [7.25.1 201204101705]
+	org.openide.windows [6.48.2 201204101705]
+	org.netbeans.swing.tabcontrol [1.29.1 201204101705]
+	org.netbeans.swing.outline [1.17.2 201204101705]
+	org.openide.explorer [6.40.1 201204101705]
+	org.netbeans.modules.editor.mimelookup/1 [1.24.1 201204101705]
+	org.openide.text [6.43.3 201204101705]
+	org.openide.actions [6.24.1 201204101705]
+	org.netbeans.modules.queries/1 [1.25.1 201204101705]
+	org.netbeans.api.annotations.common/1 [1.11.1 201204101705]
+	org.openide.loaders [7.32.1 201204101705]
+	org.netbeans.core.multiview/1 [1.26.2 201204101705]
+	ru.madzi.aos [1.0 120726]
+	org.openidex.util/3 [3.32.1 201204101705]
+	org.openide.io [1.29.1 201204101705]
+	org.openide.execution [1.24.1 201204101705]
+	org.netbeans.upgrader [4.20.1 201204101705]
+	org.netbeans.swing.plaf [1.23.1 201204101705]
+	org.netbeans.modules.projectapi/1 [1.40.1 201204101705]
+	org.netbeans.swing.dirchooser [1.14.2 201204101705]
+	org.netbeans.spi.viewmodel/2 [1.34.1 201204101705]
+	org.netbeans.spi.tasklist/1 [1.17.1.1 1 201204101705]
+	org.netbeans.spi.quicksearch [1.12.1 201204101705]
+	org.netbeans.spi.palette/1 [1.29.1 201204101705]
+	org.netbeans.spi.navigator/1 [1.20.1 201204101705]
+	org.netbeans.modules.editor.settings/1 [1.38.1 201204101705]
+	org.netbeans.modules.editor.lib2/1 [1.53.2.25 25 201204101705]
+	org.netbeans.modules.editor.fold/1 [1.27.1.25 201204101705]
+	org.netbeans.modules.editor.indent/2 [1.26.1 201204101705]
+	org.netbeans.modules.editor.lib/3 [3.17.1.19.25 19 201204101705]
+	org.netbeans.spi.editor.hints/0 [1.20.2.7.25 7 201204101705]
+	org.netbeans.api.debugger/1 [1.33.1 201204101705]
+	org.netbeans.modules.projectuiapi/1 [1.53.1.8 8 201204101705]
+	org.netbeans.spi.debugger.ui/1 [2.29.1 201204101705]
+	org.netbeans.api.xml/1 [1.28.1 201204101705]
+	org.netbeans.modules.xml.core/2 [1.28.1.4 4 201204101705]
+	org.netbeans.modules.editor.errorstripe.api/1 [2.18.1.1 1 201204101705]
+	org.netbeans.modules.editor.errorstripe/2 [2.19.1.1.1 1 201204101705]
+	org.netbeans.bootstrap/1 [2.44.3 201204101705]
+	org.netbeans.core.startup/1 [1.36.1 201204101705]
+	org.netbeans.modules.keyring [1.8.1.1 201204101705]
+	org.netbeans.core/2 [3.28.1 201204101705]
+	org.netbeans.modules.options.api/1 [1.24.1 201204101705]
+	org.netbeans.modules.javahelp/1 [2.24.1 201204101705]
+	org.netbeans.modules.editor.settings.storage/1 [1.31.1 201204101705]
+	org.netbeans.modules.editor/3 [1.59.2.5.19.25 5 201204101705]
+	org.netbeans.modules.options.keymap [1.16.1 201204101705]
+	org.netbeans.modules.options.editor/1 [1.27.1 201204101705]
+	org.netbeans.modules.diff/1 [1.35.1.42.1 42 201204101705]
+	org.netbeans.modules.editor.completion/1 [1.28.1.1 1 201204101705]
+	org.netbeans.modules.editor.codetemplates/1 [1.24.1.1 1 201204101705]
+	org.netbeans.core.ui/1 [1.29.1 201204101705]
+	org.netbeans.api.java.classpath/1 [1.31.2 201204101705]
+	org.netbeans.libs.lucene/3 [3.4.1 201204101705]
+	org.netbeans.libs.jna/1 [1.16.1 201204101705]
+	org.netbeans.modules.masterfs/2 [2.34.2 201204101705]
+	org.netbeans.modules.parsing.lucene/2 [2.5.1 201204101705]
+	org.netbeans.modules.parsing.api/1 [1.48.2.6 6 201204101705]
+	org.netbeans.modules.jumpto/1 [1.26.1.1 1 201204101705]
+	org.netbeans.modules.editor.guards/1 [1.14.1 201204101705]
+	org.netbeans.modules.refactoring.api [1.19.2 201204101705]
+	org.netbeans.modules.csl.api/2 [2.23.2.2.1.1.6 2 201204101705]
+	org.netbeans.modules.xml.lexer [1.15.1 201204101705]
+	org.netbeans.modules.editor.deprecated.pre65formatting/0 [1.6.1.1.5.19.25 1 201204101705]
+	org.netbeans.modules.editor.structure/1 [1.31.1.1 1 201204101705]
+	org.netbeans.modules.editor.bracesmatching/0 [1.20.1 201204101705]
+	org.netbeans.modules.xml.text/2 [1.31.1 201204101705]
+	org.netbeans.modules.xml.xam/1 [1.16.1.1 1 201204101705]
+	org.netbeans.modules.xml.schema.model/1 [1.17.1.1 1 201204101705]
+	org.netbeans.modules.xml.axi [1.16.1 201204101705]
+	org.apache.xml.resolver [1.17.1.12 12 201204101705]
+	org.netbeans.modules.xml.retriever/1 [1.16.1 201204101705]
+	org.netbeans.modules.xml [1.15.1 201204101705]
+	org.netbeans.modules.servletapi/1 [1.25.1 201204101705]
+	org.netbeans.modules.httpserver/2 [2.21.1.42 42 201204101705]
+	org.netbeans.modules.xsl/1 [1.28.1 201204101705]
+	org.netbeans.modules.xml.xdm/1 [1.17.1.1 1 201204101705]
+	org.netbeans.libs.xerces/1 [1.24.1.280 280 201204101705]
+	org.netbeans.modules.xml.tax/2 [1.28.1.280 201204101705]
+	org.netbeans.modules.xml.tools/2 [1.28.1 201204101705]
+	org.netbeans.modules.xml.schema.completion [1.15.1 201204101705]
+	org.netbeans.modules.xml.catalog/2 [1.26.1.4 4 201204101705]
+	org.netbeans.modules.sendopts/2 [2.15.1 201204101705]
+	org.netbeans.core.execution/1 [1.26.1 201204101705]
+	org.netbeans.modules.favorites/1 [1.27.1 201204101705]
+	org.netbeans.modules.projectui [1.30.1.8 201204101705]
+	org.netbeans.modules.welcome/1 [1.26.2 201204101705]
+	org.netbeans.modules.web.common [1.15.1 201204101705]
+	org.netbeans.modules.web.indent [1.2.1 201204101705]
+	org.netbeans.modules.spellchecker.apimodule [1.10.1 201204101705]
+	org.netbeans.modules.versioning/1 [1.27.1.1.42.1 1 201204101705]
+	org.netbeans.modules.versioning.util [1.17.5.42.1 201204101705]
+	org.netbeans.modules.autoupdate.services [1.28.2 201204101705]
+	org.netbeans.modules.autoupdate.ui [1.25.1 201204101705]
+	org.netbeans.modules.versioning.system.cvss.installer [1.1.2 201204101705]
+	org.netbeans.modules.versioning.indexingbridge/0 [1.10.1 201204101705]
+	org.netbeans.modules.utilities/1 [1.42.2 201204101705]
+	org.netbeans.modules.utilities.project/1 [1.21.1 201204101705]
+	org.netbeans.modules.usersguide/1 [1.34.1 201204101705]
+	org.netbeans.modules.updatecenters/1 [1.25.1 201204101705]
+	org.netbeans.lib.uihandler [1.28.1 201204101705]
+	org.netbeans.modules.uihandler [2.18.1 201204101705]
+	org.netbeans.modules.uihandler.exceptionreporter [1.14.1 201204101705]
+	org.netbeans.lib.terminalemulator [1.18.1 201204101705]
+	org.netbeans.modules.terminal [1.7.1 201204101705]
+	org.netbeans.modules.tasklist.ui/1 [1.16.1.1 201204101705]
+	org.netbeans.modules.tasklist.todo/1 [1.15.1.1 1 201204101705]
+	org.netbeans.modules.tasklist.projectint/1 [1.14.1 201204101705]
+	org.netbeans.modules.tasklist.kit [1.14.1 201204101705]
+	org.netbeans.modules.swingapplib [1.0 201204101705]
+	org.netbeans.libs.svnClientAdapter/1 [1.19.1 201204101705]
+	org.netbeans.libs.ini4j/1 [1.16.1 201204101705]
+	org.netbeans.modules.subversion [1.19.5.42.1 201204101705]
+	org.netbeans.modules.editor.plain.lib/1 [1.19.1 201204101705]
+	org.netbeans.modules.spellchecker [1.19.1.1.7 1 201204101705]
+	org.netbeans.modules.spellchecker.kit [1.11.1 201204101705]
+	org.netbeans.modules.spellchecker.dictionary_en [1.8.1 201204101705]
+	org.netbeans.modules.properties/1 [1.38.1 201204101705]
+	org.netbeans.modules.properties.syntax/1 [1.34.1 201204101705]
+	org.netbeans.modules.spellchecker.bindings.properties [1.7.1 201204101705]
+	org.netbeans.modules.html.lexer/1 [1.15.1 201204101705]
+	org.netbeans.modules.spellchecker.bindings.htmlxml [1.12.1 201204101705]
+	org.netbeans.modules.settings/1 [1.33.1 201204101705]
+	org.netbeans.core.ide/1 [1.26.1 201204101705]
+	org.netbeans.modules.server/0 [1.16.1 201204101705]
+	org.netbeans.modules.project.libraries/1 [1.32.1 201204101705]
+	org.netbeans.modules.project.ant/1 [1.45.1 201204101705]
+	org.netbeans.modules.progress.ui [1.18.1 201204101705]
+	org.netbeans.modules.print.editor [7.12.1 201204101705]
+	org.netbeans.modules.print [7.11.1 201204101705]
+	org.netbeans.libs.osgi [1.7.1 201204101705]
+	org.netbeans.core.netigso [1.12.2 201204101705]
+	org.netbeans.modules.netbinox [1.24.1 201204101705]
+	org.netbeans.modules.mercurial [1.21.3.42.1 201204101705]
+	org.netbeans.modules.localhistory [1.15.1 201204101705]
+	org.netbeans.modules.lexer.nbbridge/1 [1.17.1.1 201204101705]
+	org.netbeans.libs.bytelist/1 [0.13.1.1 1 201204101705]
+	org.netbeans.libs.jvyamlb/1 [0.15.1 201204101705]
+	org.netbeans.modules.languages.yaml [2.16.1 201204101705]
+	org.netbeans.modules.languages.manifest [1.17.1 201204101705]
+	org.netbeans.modules.languages.diff [1.18.1 201204101705]
+	org.netbeans.modules.keyring.impl [1.5.2 201204101705]
+	org.netbeans.libs.junit4 [1.14 201204101705]
+	org.netbeans.modules.junitlib [1.1 201204101705]
+	org.netbeans.libs.antlr3.runtime [1.7.1.1 1 201204101705]
+	org.netbeans.modules.css.lib/1 [1.4.2 201204101705]
+	org.netbeans.modules.css.editor/1 [1.23.2 201204101705]
+	org.netbeans.modules.html.editor.lib/2 [2.0.1 201204101705]
+	org.netbeans.modules.html.editor/1 [1.33.1 201204101705]
+	org.mozilla.rhino.patched/1 [1.115.1 201204101705]
+	org.netbeans.modules.javascript.editing/1 [0.103.1 201204101705]
+	org.netbeans.modules.javascript.refactoring/1 [0.76.1 201204101705]
+	org.netbeans.modules.javascript.hints/1 [0.51.1 201204101705]
+	org.netbeans.modules.javascript.kit/1 [0.117.1 201204101705]
+	org.netbeans.modules.image/1 [1.33.1 201204101705]
+	org.netbeans.modules.editor.bookmarks/1 [1.19.2 201204101705]
+	org.netbeans.modules.editor.actions/1 [1.13.1.25 201204101705]
+	org.netbeans.core.browser/1 [1.12.1.1 1 201204101705]
+	org.netbeans.core.output2/1 [1.24.2 201204101705]
+	org.netbeans.modules.css.visual/1 [2.21.2 201204101705]
+	org.netbeans.modules.html/1 [1.39.1 201204101705]
+	org.netbeans.modules.html.parser/1 [1.7.2.1 1 201204101705]
+	org.netbeans.modules.html.validation/1 [1.9.1 201204101705]
+	org.netbeans.modules.editor.kit [1.15.1 201204101705]
+	org.netbeans.modules.extexecution/2 [1.27.1 201204101705]
+	com.jcraft.jsch [0.1.44 0.1.44]
+	org.netbeans.modules.dlight.nativeexecution [1.13.4.1 1 201204101705]
+	org.netbeans.modules.dlight.terminal [1.8.1.1 1 201204101705]
+	org.netbeans.modules.editor.plain/2 [1.20.1 201204101705]
+	org.netbeans.libs.felix [2.1.1 201204101705]
+	org.netbeans.core.windows/2 [2.41.4 201205181646]
+	org.netbeans.modules.core.kit [1.14.1 201204101705]
+	org.netbeans.modules.editor.macros/0 [1.15.1.1.19 1 201204101705]
+	org.netbeans.modules.extbrowser/1 [1.26.1 201204101705]
+	org.netbeans.modules.defaults/1 [1.17.1 201204101705]
+	org.netbeans.modules.ide.kit [1.17.1 201204101705]
+	org.netbeans.modules.ide.ergonomics [1.13.1 201204101705]
+	org.netbeans.modules.autoupdate.pluginimporter [1.3.1 201204101705]
+	org.netbeans.modules.ide.branding/1 [1.18.1 201204101705]
+	org.netbeans.modules.ide.branding.kit [1.14.1 201204101705]
+	org.netbeans.modules.gsf.testrunner [1.23.1 201204101705]
+	org.netbeans.libs.commons_net/2 [2.3.1.301 301 201204101705]
+	org.netbeans.modules.hudson [1.16.1 201204101705]
+	org.netbeans.modules.hudson.tasklist [1.1.1 201204101705]
+	org.netbeans.modules.hudson.subversion [1.13.1 201204101705]
+	org.netbeans.modules.hudson.mercurial [1.13.1 201204101705]
+	org.netbeans.modules.hudson.git [1.2.1 201204101705]
+	org.netbeans.modules.db.metadata.model/0 [0.15.1 201204101705]
+	org.netbeans.modules.db/1 [1.46.1.30 30 201204101705]
+	org.netbeans.modules.derby [1.25.1 201204101705]
+	org.netbeans.modules.glassfish.common/0 [1.19.3 201204101705]
+	org.eclipse.jgit [1.0.0 1.0.0.201106090707-r]
+	org.netbeans.libs.git/1 [0.4.4 201205181646]
+	org.netbeans.modules.git [1.1.4.1 201205181646]
+	org.apache.commons.io [1.4 1.4]
+	org.netbeans.modules.extexecution.destroy [1.10.1 201204101705]
+	org.netbeans.modules.editor.mimelookup.impl/1 [1.16.1 201204101705]
+	org.netbeans.modules.editor.indent.project/0 [1.7.1 201204101705]
+	org.netbeans.modules.dbapi [1.19.1.30 201204101705]
+	org.netbeans.api.visual [2.30.1 201204101705]
+	org.netbeans.modules.db.sql.visualeditor/1 [2.15.1.30 201204101705]
+	org.netbeans.libs.swingx/1 [1.12.1 201204101705]
+	org.netbeans.modules.db.dataview [1.13.1 201204101705]
+	org.netbeans.modules.db.core [1.21.2 201204101705]
+	org.netbeans.modules.db.sql.editor [1.21.1.30 201204101705]
+	org.netbeans.modules.db.mysql [0.13.1.2 2 201204101705]
+	org.netbeans.modules.db.drivers [1.14.1 201204101705]
+	org.netbeans.modules.db.kit [1.16.1 201204101705]
+	org.eclipse.mylyn.tasks.core [3.6.0 3.6.0.v20110608-1400]
+	org.netbeans.modules.bugtracking [1.17.1 201204101705]
+	org.eclipse.equinox.common [3.6.0 3.6.0.v20100503]
+	org.eclipse.mylyn.bugzilla.core [3.6.0 3.6.0.v20110608-1400]
+	org.eclipse.core.runtime [3.6.0 3.6.0.v20100505]
+	org.apache.commons.httpclient [3.1.0 3.1.0]
+	org.eclipse.mylyn.commons.net [3.6.0 3.6.0.v20110608-1400]
+	org.netbeans.modules.bugzilla [1.15.1 201204101705]
+	org.netbeans.modules.bugzilla.exceptionreporter [1.7.1 201204101705]
+	org.netbeans.modules.bugtracking.bridge [1.13.1 201204101705]
+	org.netbeans.libs.svnClientAdapter.svnkit/1 [1.4.1 201204101705]
+	org.netbeans.libs.svnClientAdapter.javahl/1 [1.5.1 201204101705]
+	org.netbeans.libs.freemarker/1 [2.17.1.238 238 201204101705]
+	org.netbeans.core.nativeaccess/1 [1.14.2 201204101705]
+	org.netbeans.core.io.ui/1 [1.14.1 201204101705]
+	org.eclipse.mylyn.monitor.ui.dummy [3.4.0 3.4.0]
+	org.eclipse.mylyn.commons.soap [3.4.0 3.4.0.v20100608-0100-e3x]
+	org.apache.commons.discovery [0.2.0 0.2.0]
+	org.apache.axis [1.4.0 1.4.0]
+	javax.xml.soap [1.2.0 1.2.0]
+	javax.xml.rpc [1.1.0 1.1.0]
+	javax.servlet [2.5.0 2.5.0]
+	javax.mail [1.4.0 1.4.0]
+	javax.activation [1.1.0 1.1.0]
+	com.atlassian.connector.eclipse.jira.core [3.0.0 3.0.0.v20110210]
+	com.atlassian.connector.eclipse.commons.core [3.0.0 3.0.0.v20110210]
+	javax.wsdl [1.6.0 201204101705]
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.registry@3.5.0.v20100503 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.commons.logging@1.1.0 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle com.jcraft.jzlib@1.0.7 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.ws.commons.util@1.0.1 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.app@1.3.1.R36x_v20100803 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.preferences@3.3.0.v20100503 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.contenttype@3.4.100.v20100505-1235 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.commons.codec@1.3.0 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.commons.lang@2.4.0 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.runtime.compatibility.auth@3.2.200.v20100517 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.xmlrpc@3.0.0 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.jobs@3.5.1.R36x_v20100824 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.mylyn.commons.core@3.6.0.v20110608-1400 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.security@1.0.200.v20100503 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.net@1.2.100.I20100511-0800 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.mylyn.commons.xmlrpc@3.6.0.v20110608-1400 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.runtime.compatibility.auth@3.2.200.v20100517 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.preferences@3.3.0.v20100503 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.jobs@3.5.1.R36x_v20100824 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.registry@3.5.0.v20100503 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.app@1.3.1.R36x_v20100803 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.equinox.security@1.0.200.v20100503 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.core.net@1.2.100.I20100511-0800 started
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.osgi@3.6.0.v20100517 started
+Diagnostic information
+Input arguments:
+	-Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade
+	-Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense
+	-Xss2m
+	-Xms32m
+	-XX:PermSize=32m
+	-Dapple.laf.useScreenMenuBar=true
+	-Dapple.awt.graphics.UseQuartz=true
+	-Dsun.java2d.noddraw=true
+	-Dsun.zip.disableMemoryMapping=true
+	-Xmx768m
+	-XX:MaxPermSize=384m
+	-Dnetbeans.logger.console=true
+	-ea
+	-Djdk.home=C:\Program Files\Java\jdk1.7.0_03
+	-Dnetbeans.home=C:\Program Files\NetBeans 7.1.2\platform
+	-Dnetbeans.user=C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\testuserdir
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\testuserdir\var\log\heapdump.hprof
+	-Dnetbeans.system_http_proxy=DIRECT
+	-Dsun.awt.keepWorkingSetOnMinimize=true
+	-Dnetbeans.dirs=C:\Program Files\NetBeans 7.1.2\nb;C:\Program Files\NetBeans 7.1.2\ergonomics;C:\Program Files\NetBeans 7.1.2\ide;C:\Program Files\NetBeans 7.1.2\java;C:\Program Files\NetBeans 7.1.2\apisupport;C:\Program Files\NetBeans 7.1.2\webcommon;C:\Program Files\NetBeans 7.1.2\websvccommon;C:\Program Files\NetBeans 7.1.2\enterprise;C:\Program Files\NetBeans 7.1.2\mobility;C:\Program Files\NetBeans 7.1.2\profiler;C:\Program Files\NetBeans 7.1.2\python;C:\Program Files\NetBeans 7.1.2\php;C:\Program Files\NetBeans 7.1.2\identity;C:\Program Files\NetBeans 7.1.2\harness;C:\Program Files\NetBeans 7.1.2\cnd;C:\Program Files\NetBeans 7.1.2\dlight;C:\Program Files\NetBeans 7.1.2\groovy;C:\Program Files\NetBeans 7.1.2\extra;C:\Program Files\NetBeans 7.1.2\javacard;C:\Program Files\NetBeans 7.1.2\javafx;C:\Program Files\NetBeans 7.1.2\stableuc;C:\Users\deliseev\Documents\NetBeansProjects\Active Oberon Support\build\cluster
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 32.0MB maximum 682.7MB
+Non heap memory usage: initial 34.4MB maximum 432.0MB
+Garbage collector: PS Scavenge (Collections=13 Total time spent=0s)
+Garbage collector: PS MarkSweep (Collections=1 Total time spent=0s)
+Classes: loaded=5748 total loaded=5748 unloaded 0
+INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 8,493,371,392
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator at org.netbeans.modules.versioning.Utils.getRootFilesystem(Utils.java:366)
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.netbeans.libs.jna in C:\Program Files\NetBeans 7.1.2\platform does not own modules/lib/amd64/jnidispatch.dll at org.netbeans.StandardModule$OneModuleClassLoader.findLibrary(StandardModule.java:721)
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator at org.netbeans.modules.masterfs.providers.Attributes.getRootForAttributes(Attributes.java:104)
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator at org.netbeans.modules.csl.core.LanguageRegistry.userdirCleanup(LanguageRegistry.java:467)
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator at org.netbeans.modules.versioning.VersioningManager.getLocalHistory(VersioningManager.java:485)
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.netbeans.modules.javascript.editing in C:\Program Files\NetBeans 7.1.2\ide does not own jsstubs/allstubs.zip at org.netbeans.modules.javascript.editing.JsClassPathProvider.getJsStubs(JsClassPathProvider.java:93)
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 2 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 binary roots took: 0 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 source roots took: 0 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 16 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 binary roots took: 0 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: jar:file:/C:/Program%20Files/NetBeans%207.1.2/ide/jsstubs/allstubs.zip!/ took: 91 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 1 source roots took: 91 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.netbeans.modules.extbrowser in C:\Program Files\NetBeans 7.1.2\ide does not own modules/lib/extbrowser64.dll at org.netbeans.StandardModule$OneModuleClassLoader.findLibrary(StandardModule.java:718)
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Mozilla : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MOZILLA.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 7 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCP.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 6 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCP6.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 4 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCAPE.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Mozilla : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MOZILLA.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 7 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCP.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 6 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCP6.exe.
+INFO [org.netbeans.modules.extbrowser]: Cannot detect Netscape 4 : org.netbeans.modules.extbrowser.NbBrowserException: RegOpenKeyEx() failed for SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\NETSCAPE.exe.
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator at org.netbeans.modules.uihandler.Installer.logFileMetrics(Installer.java:801)
