@@ -1,1 +1,3 @@
-sample content
+MODULE ident;
+
+END ident.
