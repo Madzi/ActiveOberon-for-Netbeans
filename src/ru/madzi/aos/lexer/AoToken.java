@@ -1,5 +1,8 @@
 package ru.madzi.aos.lexer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author deliseev
  */
@@ -15,7 +18,9 @@ public enum AoToken {
     PLUS("PLUS", AoCategory.OPERATOR, 7),
     MINUS("MINUS", AoCategory.OPERATOR, 8),
     BECOME("BECOME", AoCategory.OPERATOR, 9),
-    DOT("DOT", AoCategory.SEPARATOR, 10);
+    DOT("DOT", AoCategory.SEPARATOR, 10),
+    MODULE("MODULE", AoCategory.KEYWORD, 11),
+    IDENTIFIER("IDENTIFIER", AoCategory.IDENTIFIER, 12);
 
     private int id;
     private String name;
@@ -37,6 +42,16 @@ public enum AoToken {
 
     public AoCategory getCategory() {
         return category;
+    }
+
+    public static List<AoToken> getTokens(AoCategory category) {
+        List<AoToken> tokens = new ArrayList<AoToken>();
+        for (AoToken token : AoToken.values()) {
+            if (token.category == category) {
+                tokens.add(token);
+            }
+        }
+        return tokens;
     }
 
 }

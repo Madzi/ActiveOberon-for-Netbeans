@@ -12,7 +12,9 @@ public enum AoCategory {
     OPERATOR("operator"),
     STRING("string"),
     NUMBER("number"),
-    DIRECTIVE("directive");
+    DIRECTIVE("directive"),
+    IDENTIFIER("identifier"),
+    KEYWORD("keyword");
 
     private String name;
 

@@ -10,6 +10,8 @@ import org.netbeans.spi.lexer.LexerRestartInfo;
  */
 class AoLexer implements Lexer<AoTokenId> {
 
+    public static final char EOF = (char) -1;
+
     private LexerRestartInfo<AoTokenId> info;
 
     public AoLexer(LexerRestartInfo<AoTokenId> info) {
@@ -31,7 +33,8 @@ class AoLexer implements Lexer<AoTokenId> {
     }
 
     private char getChar() {
-        return (char) info.input().read();
+        int sym = info.input().read();
+        return sym == LexerInput.EOF ? EOF : (char) sym;
     }
 
     private void undoChar() {
@@ -40,14 +43,15 @@ class AoLexer implements Lexer<AoTokenId> {
 
     private AoToken getToken() {
         char ch = getChar();
-        if (ch == LexerInput.EOF) {
+        if (ch == EOF) {
             return AoToken.EOF;
         } else if (Character.isWhitespace(ch)) {
             return AoToken.WHITESPACE;
         } else if (Character.isDigit(ch)) {
             return AoToken.NUMBER;
         } else if (Character.isJavaIdentifierStart(ch)) {
-            return AoToken.STRING;
+            undoChar();
+            return identifier();
         } else {
             switch (ch) {
                 case '.' :
@@ -65,6 +69,25 @@ class AoLexer implements Lexer<AoTokenId> {
                 default: return AoToken.ERROR;
             }
         }
+    }
+
+    private AoToken identifier() {
+        char ch = getChar();
+        StringBuilder testWord = new StringBuilder();
+        while (ch != EOF && Character.isJavaIdentifierPart(ch)) {
+            testWord.append(ch);
+            ch = getChar();
+        }
+        if (ch == EOF) {
+            undoChar();
+        }
+        String test = testWord.toString();
+        for (AoToken token : AoToken.getTokens(AoCategory.KEYWORD)) {
+            if (test.equals(token.getName())) {
+                return token;
+            }
+        }
+        return AoToken.IDENTIFIER;
     }
 
 }
