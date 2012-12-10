@@ -33,16 +33,16 @@ public enum AoToken {
     FOR("FOR", AoCategory.KEYWORD, 22),
     FINALLY("FINALLY", AoCategory.KEYWORD, 23),
     IF("IF", AoCategory.KEYWORD, 24),
-    IN("IN", AoCategory.KEYWORD, 25),
+    IN("IN", AoCategory.OPERATOR, 25),
     IS("IS", AoCategory.KEYWORD, 26),
     IMPORT("IMPORT", AoCategory.KEYWORD, 27),
     IMPLEMENTS("IMPLEMENTS", AoCategory.KEYWORD, 28),
     LOOP("LOOP", AoCategory.KEYWORD, 29),
-    MOD("MOD", AoCategory.KEYWORD, 30),
+    MOD("MOD", AoCategory.OPERATOR, 30),
     MODULE("MODULE", AoCategory.KEYWORD, 31),
     NIL("NIL", AoCategory.KEYWORD, 32),
     OBJECT("OBJECT", AoCategory.KEYWORD, 33),
-    OR("OR", AoCategory.KEYWORD, 34),
+    OR("OR", AoCategory.OPERATOR, 34),
     OF("OF", AoCategory.KEYWORD, 35),
     OPERATOR("OPERATOR", AoCategory.KEYWORD, 36),
     POINTER("POINTER", AoCategory.KEYWORD, 37),
@@ -58,15 +58,52 @@ public enum AoToken {
     VAR("VAR", AoCategory.KEYWORD, 47),
     WHILE("WHILE", AoCategory.KEYWORD, 48),
     WITH("WITH", AoCategory.KEYWORD, 49),
-    LBRACE("LBRACE", AoCategory.SEPARATOR, 50),
-    RBRACE("RBRACE", AoCategory.SEPARATOR, 51),
-    BAR("BAR", AoCategory.SEPARATOR, 56),
-    /*
-     * () [] {} |
-     * " ' , . .. : ;
-     * & ~ ^ ?
-     * # .# = .= < .< <= .<= > .> >= .>=
-     * + +* - * .* ** / ./ \ `
+    LBRACE("LBRACE", AoCategory.SEPARATOR, 50),         // (
+    RBRACE("RBRACE", AoCategory.SEPARATOR, 51),         // )
+    LBRAK("LBRAK", AoCategory.SEPARATOR, 52),           // [
+    RBRAK("RBRAK", AoCategory.SEPARATOR, 53),           // ]
+    LPAREN("LPAREN", AoCategory.SEPARATOR, 54),         // {
+    RPAREN("RPAREN", AoCategory.SEPARATOR, 55),         // }
+    BAR("BAR", AoCategory.SEPARATOR, 56),               // |
+    PERIOD("PERIOD", AoCategory.SEPARATOR, 57),         // ,
+    COMMA("COMMA", AoCategory.SEPARATOR, 58),           // .
+    UPTO("UPTO", AoCategory.SEPARATOR, 59),             // ..
+    COLON("COLON", AoCategory.SEPARATOR, 60),           // :
+    SEMICOLON("SEMICOLON", AoCategory.SEPARATOR, 61),   // ;
+    BECOMES("BECOMES", AoCategory.SEPARATOR, 62),       // :=
+    AND("AND", AoCategory.OPERATOR, 63),                // &
+    NOT("NOT", AoCategory.OPERATOR, 64),                // ~
+    ARROW("ARROW", AoCategory.OPERATOR, 65),            // ^
+    QMARK("QMARK", AoCategory.OPERATOR, 66),            // ?
+    NEQ("NEQ", AoCategory.OPERATOR, 67),                // #
+    // .#
+    EQL("EQL", AoCategory.OPERATOR, 69),                // =
+    // .=
+    LSS("LSS", AoCategory.OPERATOR, 71),                // <
+    // .<
+    LSQ("LSQ", AoCategory.OPERATOR, 73),                // <=
+    // .<=
+    GTR("GTR", AoCategory.OPERATOR, 75),                // >
+    // .>
+    GEQ("GEQ", AoCategory.OPERATOR, 77),                // >=
+    // .>=
+    PLUS("PLUS", AoCategory.OPERATOR, 79),
+    // +*
+    MINUS("MINUS", AoCategory.OPERATOR, 81),
+    TIMES("TIMES", AoCategory.OPERATOR, 82),
+    // .*
+    // **
+    // ./
+    BACKSLASH("BACKSLASH", AoCategory.OPERATOR, 86), // \
+    // `
+     /* 
+	(** fof >> *)
+	scalarproduct = PCS.scalarproduct;  
+	elementproduct = PCS.elementproduct;  
+	elementquotient = PCS.elementquotient;  
+	transpose = PCS.transpose;  dtimes = PCS.dtimes;  
+	eeql = PCS.eeql;  eneq = PCS.eneq;  elss = PCS.elss;  
+	eleq = PCS.eleq;  egtr = PCS.egtr;  egeq = PCS.egeq
      */
     SYSTEM("SYSTEM", AoCategory.KEYWORD, 100),
     SELF("SELF", AoCategory.KEYWORD, 101),

@@ -14,6 +14,8 @@ class AoLexer implements Lexer<AoTokenId> {
 
     private LexerRestartInfo<AoTokenId> info;
 
+    private String strVal;
+
     public AoLexer(LexerRestartInfo<AoTokenId> info) {
         this.info = info;
     }
@@ -59,22 +61,75 @@ class AoLexer implements Lexer<AoTokenId> {
             return identifier();
         } else {
             switch (ch) {
-//                case '.' :
-//                    return AoToken.DOT;
-//                case ';' :
-//                    return AoToken.SEMICOLON;
-//                case ':' :
-//                    ch = getChar();
-//                    if (ch == EOF) {
-//                        undoChar();
-//                        return AoToken.COLON;
-//                    }
-//                    if (ch == '=') {
-//                        return AoToken.BECOME;
-//                    } else {
-//                        undoChar();
-//                        return AoToken.COLON;
-//                    }
+                case '\'':
+                case '"':
+                    return string(ch);
+
+                case ',':
+                    return AoToken.PERIOD;
+
+                case '.' :
+                    return AoToken.COMMA;
+
+                case ';' :
+                    return AoToken.SEMICOLON;
+
+                case ':' :
+                    ch = getChar();
+                    if (ch == '=') {
+                        return AoToken.BECOMES;
+                    } else {
+                        undoChar();
+                        return AoToken.COLON;
+                    }
+
+                case '#':
+                    return AoToken.NEQ;
+
+                case '=':
+                    return AoToken.EQL;
+
+                case '^':
+                    return AoToken.ARROW;
+
+                case '&':
+                    return AoToken.AND;
+
+                case '*':
+                    return AoToken.TIMES;
+
+                case '/':
+                    return AoToken.DIV;
+
+                case '+':
+                    return AoToken.PLUS;
+
+                case '-':
+                    return AoToken.MINUS;
+
+                case '(':
+                    ch = getChar();
+                    if (ch == '*') {
+                        return comment();
+                    }
+                    undoChar();
+                    return AoToken.LBRACE;
+
+                case ')':
+                    return AoToken.RBRACE;
+
+                case '[':
+                    return AoToken.LBRAK;
+
+                case ']':
+                    return AoToken.RBRAK;
+
+                case '{':
+                    return AoToken.LPAREN;
+
+                case '}':
+                    return AoToken.RPAREN;
+
                 default: return AoToken.ERROR;
             }
         }
@@ -87,9 +142,7 @@ class AoLexer implements Lexer<AoTokenId> {
             testWord.append(ch);
             ch = getChar();
         }
-        if (ch == EOF) {
-            undoChar();
-        }
+        undoChar();
         String test = testWord.toString();
         for (AoToken token : AoToken.getTokens(AoCategory.KEYWORD)) {
             if (test.equals(token.getName())) {
@@ -97,6 +150,21 @@ class AoLexer implements Lexer<AoTokenId> {
             }
         }
         return AoToken.IDENTIFIER;
+    }
+
+    private AoToken string(char end) {
+        char ch = getChar();
+        StringBuilder str = new StringBuilder();
+        while (ch != EOF && ch != end) {
+            str.append(ch);
+            ch = getChar();
+        }
+        strVal = str.toString();
+        if (ch == EOF) {
+            undoChar();
+            return AoToken.ERROR;
+        }
+        return AoToken.STRING;
     }
 
     private AoToken comment() {
