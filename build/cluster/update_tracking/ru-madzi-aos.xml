@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><module codename="ru.madzi.aos">
-    <module_version install_time="1355132242772" last="true" origin="installer" specification_version="1.0">
-        <file crc="2693635518" name="config/Modules/ru-madzi-aos.xml"/>
-        <file crc="195827668" name="modules/ru-madzi-aos.jar"/>
-    </module_version>
-</module>

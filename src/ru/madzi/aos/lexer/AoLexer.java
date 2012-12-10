@@ -59,22 +59,22 @@ class AoLexer implements Lexer<AoTokenId> {
             return identifier();
         } else {
             switch (ch) {
-                case '.' :
-                    return AoToken.DOT;
-                case ';' :
-                    return AoToken.SEMICOLON;
-                case ':' :
-                    ch = getChar();
-                    if (ch == EOF) {
-                        undoChar();
-                        return AoToken.COLON;
-                    }
-                    if (ch == '=') {
-                        return AoToken.BECOME;
-                    } else {
-                        undoChar();
-                        return AoToken.COLON;
-                    }
+//                case '.' :
+//                    return AoToken.DOT;
+//                case ';' :
+//                    return AoToken.SEMICOLON;
+//                case ':' :
+//                    ch = getChar();
+//                    if (ch == EOF) {
+//                        undoChar();
+//                        return AoToken.COLON;
+//                    }
+//                    if (ch == '=') {
+//                        return AoToken.BECOME;
+//                    } else {
+//                        undoChar();
+//                        return AoToken.COLON;
+//                    }
                 default: return AoToken.ERROR;
             }
         }
@@ -123,6 +123,7 @@ class AoLexer implements Lexer<AoTokenId> {
         }
         if (ch == EOF) {
             undoChar();
+            return AoToken.ERROR;
         }
         return AoToken.COMMENT;
     }
