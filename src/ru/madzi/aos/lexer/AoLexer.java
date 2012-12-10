@@ -59,14 +59,6 @@ class AoLexer implements Lexer<AoTokenId> {
             return identifier();
         } else {
             switch (ch) {
-                case '(' :
-                    ch = getChar();
-                    if (ch == '*') {
-                        return comment();
-                    } else {
-                        undoChar();
-                    }
-                    return AoToken.COLON;
                 case '.' :
                     return AoToken.DOT;
                 case ';' :

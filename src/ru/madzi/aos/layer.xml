@@ -9,6 +9,15 @@
                     <attr name="instanceCreate" methodvalue="ru.madzi.aos.lexer.AoTokenId.getLanguage"/>
                     <attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
                 </file>
+                <folder name="FonstColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="FontAndColors.xml" url="FontAndColors.xml">
+                                <attr name="SystemFileSystem.localizingBundle" stringvalue="ru.madzi.aos.Bundle" />
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
             </folder>
         </folder>
     </folder>
