@@ -14,7 +14,8 @@ public enum AoCategory {
     NUMBER("number"),
     DIRECTIVE("directive"),
     IDENTIFIER("identifier"),
-    KEYWORD("keyword");
+    KEYWORD("keyword"),
+    COMMENT("comment");
 
     private String name;
 

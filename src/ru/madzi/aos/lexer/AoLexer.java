@@ -20,7 +20,12 @@ class AoLexer implements Lexer<AoTokenId> {
 
     @Override
     public Token<AoTokenId> nextToken() {
-        return info.tokenFactory().createToken(AoLanguageHierarchy.getToken(getToken().getId()));
+        AoToken token = getToken();
+        if (token != AoToken.EOF) {
+            AoTokenId tokenId = AoLanguageHierarchy.getToken(token.getId());
+            return info.tokenFactory().createToken(tokenId);
+        }
+        return null;
     }
 
     @Override
@@ -54,12 +59,24 @@ class AoLexer implements Lexer<AoTokenId> {
             return identifier();
         } else {
             switch (ch) {
+                case '(' :
+                    ch = getChar();
+                    if (ch == '*') {
+                        return comment();
+                    } else {
+                        undoChar();
+                    }
+                    return AoToken.COLON;
                 case '.' :
                     return AoToken.DOT;
                 case ';' :
                     return AoToken.SEMICOLON;
                 case ':' :
                     ch = getChar();
+                    if (ch == EOF) {
+                        undoChar();
+                        return AoToken.COLON;
+                    }
                     if (ch == '=') {
                         return AoToken.BECOME;
                     } else {
@@ -88,6 +105,41 @@ class AoLexer implements Lexer<AoTokenId> {
             }
         }
         return AoToken.IDENTIFIER;
+    }
+
+    private AoToken comment() {
+        int level = 1;
+        CommentState state = CommentState.STAR;
+        char ch = getChar();
+        while (ch != EOF && level > 0) {
+            if (ch == '(') {
+                state = CommentState.LPAREN;
+            } else if (ch == '*') {
+                if (state == CommentState.LPAREN) {
+                    level++;
+                }
+                state = CommentState.STAR;
+            } else if (ch == ')') {
+                if (state == CommentState.STAR) {
+                    level--;
+                }
+                state = CommentState.RPAREN;
+            } else {
+                state = CommentState.TEXT;
+            }
+            ch = getChar();
+        }
+        if (ch == EOF) {
+            undoChar();
+        }
+        return AoToken.COMMENT;
+    }
+
+    private enum CommentState {
+        TEXT,
+        LPAREN,
+        STAR,
+        RPAREN
     }
 
 }
