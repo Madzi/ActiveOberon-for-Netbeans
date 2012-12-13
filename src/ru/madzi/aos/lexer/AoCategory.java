@@ -7,14 +7,19 @@ package ru.madzi.aos.lexer;
 public enum AoCategory {
 
     ERROR("error"),
+    WARNING("warning"),
     WHITESPACE("whitespace"),
+    CHARACTER("character"),
     SEPARATOR("separator"),
     OPERATOR("operator"),
     STRING("string"),
     NUMBER("number"),
-    DIRECTIVE("directive"),
+    TAG("tag"),
     IDENTIFIER("identifier"),
     KEYWORD("keyword"),
+    TYPE("type"),
+    SYSTEM("system"),
+    POINTER("pointer"),
     COMMENT("comment");
 
     private String name;

@@ -4,143 +4,137 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author deliseev
+ * @author Dmitry Eliseev
  */
 public enum AoToken {
 
-    EOF("EOF", AoCategory.WHITESPACE, 0),
-    ERROR("ERROR", AoCategory.ERROR, 1),
-    WHITESPACE("WHITESPACE", AoCategory.WHITESPACE, 2),
-    STRING("STRING", AoCategory.STRING, 3),
-    IDENTIFIER("IDENTIFIER", AoCategory.IDENTIFIER, 4),
-    NUMBER("NUMBER", AoCategory.NUMBER, 5),
-    COMMENT("COMMENT", AoCategory.COMMENT, 6),
-    ARRAY("ARRAY", AoCategory.KEYWORD, 7),
-    AWAIT("AWAIT", AoCategory.KEYWORD, 8),
-    BEGIN("BEGIN", AoCategory.KEYWORD, 9),
-    BY("BY", AoCategory.KEYWORD, 10),
-    CONST("CONST", AoCategory.KEYWORD, 11),
-    CASE("CASE", AoCategory.KEYWORD, 12),
-    CODE("CODE", AoCategory.KEYWORD, 13),
-    DO("DO", AoCategory.KEYWORD, 14),
-    DIV("DIV", AoCategory.KEYWORD, 15),
-    DEFINITION("DEFINITION", AoCategory.KEYWORD, 16),
-    END("END", AoCategory.KEYWORD, 17),
-    ELSE("ELSE", AoCategory.KEYWORD, 18),
-    ELSIF("ELSIF", AoCategory.KEYWORD, 19),
-    EXIT("EXIT", AoCategory.KEYWORD, 20),
-    FALSE("FALSE", AoCategory.KEYWORD, 21),
-    FOR("FOR", AoCategory.KEYWORD, 22),
-    FINALLY("FINALLY", AoCategory.KEYWORD, 23),
-    IF("IF", AoCategory.KEYWORD, 24),
-    IN("IN", AoCategory.OPERATOR, 25),
-    IS("IS", AoCategory.KEYWORD, 26),
-    IMPORT("IMPORT", AoCategory.KEYWORD, 27),
-    IMPLEMENTS("IMPLEMENTS", AoCategory.KEYWORD, 28),
-    LOOP("LOOP", AoCategory.KEYWORD, 29),
-    MOD("MOD", AoCategory.OPERATOR, 30),
-    MODULE("MODULE", AoCategory.KEYWORD, 31),
-    NIL("NIL", AoCategory.KEYWORD, 32),
-    OBJECT("OBJECT", AoCategory.KEYWORD, 33),
-    OR("OR", AoCategory.OPERATOR, 34),
-    OF("OF", AoCategory.KEYWORD, 35),
-    OPERATOR("OPERATOR", AoCategory.KEYWORD, 36),
-    POINTER("POINTER", AoCategory.KEYWORD, 37),
-    PROCEDURE("PROCEDURE", AoCategory.KEYWORD, 38),
-    RECORD("RECORD", AoCategory.KEYWORD, 39),
-    REPEAT("REPEAT", AoCategory.KEYWORD, 40),
-    RETURN("RETURN", AoCategory.KEYWORD, 41),
-    REFINES("REFINES", AoCategory.KEYWORD, 42),
-    THEN("THEN", AoCategory.KEYWORD, 43),
-    TRUE("TRUE", AoCategory.KEYWORD, 44),
-    TO("TO", AoCategory.KEYWORD, 45),
+    WHITESPACE("WHITESPACE", AoCategory.WHITESPACE, 0),
+    TIMES("*", AoCategory.OPERATOR, 1),
+    SLASH("/", AoCategory.OPERATOR, 2),
+    DIV("DIV", AoCategory.OPERATOR, 3),
+    MOD("MOD", AoCategory.OPERATOR, 4),
+    AND("&", AoCategory.OPERATOR, 5),
+    PLUS("+", AoCategory.OPERATOR, 6),
+    MINUS("-", AoCategory.OPERATOR, 7),
+    OR("OR", AoCategory.OPERATOR, 8),
+    EQL("=", AoCategory.OPERATOR, 9),
+    NEQ("#", AoCategory.OPERATOR, 10),
+    LSS("<", AoCategory.OPERATOR, 11),
+    LEQ("<=", AoCategory.OPERATOR, 12),
+    GTR(">", AoCategory.OPERATOR, 13),
+    GEQ(">=", AoCategory.OPERATOR, 14),
+    IN("IN", AoCategory.OPERATOR, 15),
+    IS("IS", AoCategory.KEYWORD, 16),
+    ARROW("^", AoCategory.OPERATOR, 17),
+    PERIOD(".", AoCategory.SEPARATOR, 18),
+    COMMA(",", AoCategory.SEPARATOR, 19),
+    COLON(":", AoCategory.SEPARATOR, 20),
+    UPTO("..", AoCategory.OPERATOR, 21),
+    RPAREN(")", AoCategory.SEPARATOR, 22),
+    RBRAK("]", AoCategory.SEPARATOR, 23),
+    RBRACE("}", AoCategory.SEPARATOR, 24),
+    OF("OF", AoCategory.KEYWORD, 25),
+    THEN("THEN", AoCategory.KEYWORD, 26),
+    DO("DO", AoCategory.KEYWORD, 27),
+    TO("TO", AoCategory.KEYWORD, 28),
+    BY("BY", AoCategory.KEYWORD, 29),
+    LPAREN("(", AoCategory.SEPARATOR, 30),
+    LBRAK("[", AoCategory.SEPARATOR, 31),
+    LBRACE("{", AoCategory.SEPARATOR, 32),
+    NOT("~", AoCategory.OPERATOR, 33),
+    BECOMES(":=", AoCategory.OPERATOR, 34),
+    NUMBER("NUMBER", AoCategory.NUMBER, 35),
+    NIL("NIL", AoCategory.POINTER, 36),
+    TRUE("TRUE", AoCategory.TYPE, 37),
+    FALSE("FALSE", AoCategory.TYPE, 38),
+    STRING("STRING", AoCategory.STRING, 39),
+    IDENTIFIER("IDENTIFIER", AoCategory.IDENTIFIER, 40),
+    SEMICOLON(";", AoCategory.SEPARATOR, 41),
+    BAR("|", AoCategory.SEPARATOR, 42),
+    END("END", AoCategory.KEYWORD, 43),
+    ELSE("ELSE", AoCategory.KEYWORD, 44),
+    ELSIF("ELSIF", AoCategory.KEYWORD, 45),
     UNTIL("UNTIL", AoCategory.KEYWORD, 46),
-    VAR("VAR", AoCategory.KEYWORD, 47),
-    WHILE("WHILE", AoCategory.KEYWORD, 48),
-    WITH("WITH", AoCategory.KEYWORD, 49),
-    LBRACE("LBRACE", AoCategory.SEPARATOR, 50),         // (
-    RBRACE("RBRACE", AoCategory.SEPARATOR, 51),         // )
-    LBRAK("LBRAK", AoCategory.SEPARATOR, 52),           // [
-    RBRAK("RBRAK", AoCategory.SEPARATOR, 53),           // ]
-    LPAREN("LPAREN", AoCategory.SEPARATOR, 54),         // {
-    RPAREN("RPAREN", AoCategory.SEPARATOR, 55),         // }
-    BAR("BAR", AoCategory.SEPARATOR, 56),               // |
-    PERIOD("PERIOD", AoCategory.SEPARATOR, 57),         // ,
-    COMMA("COMMA", AoCategory.SEPARATOR, 58),           // .
-    UPTO("UPTO", AoCategory.SEPARATOR, 59),             // ..
-    COLON("COLON", AoCategory.SEPARATOR, 60),           // :
-    SEMICOLON("SEMICOLON", AoCategory.SEPARATOR, 61),   // ;
-    BECOMES("BECOMES", AoCategory.SEPARATOR, 62),       // :=
-    AND("AND", AoCategory.OPERATOR, 63),                // &
-    NOT("NOT", AoCategory.OPERATOR, 64),                // ~
-    ARROW("ARROW", AoCategory.OPERATOR, 65),            // ^
-    QMARK("QMARK", AoCategory.OPERATOR, 66),            // ?
-    NEQ("NEQ", AoCategory.OPERATOR, 67),                // #
-    // .#
-    EQL("EQL", AoCategory.OPERATOR, 69),                // =
-    // .=
-    LSS("LSS", AoCategory.OPERATOR, 71),                // <
-    // .<
-    LSQ("LSQ", AoCategory.OPERATOR, 73),                // <=
-    // .<=
-    GTR("GTR", AoCategory.OPERATOR, 75),                // >
-    // .>
-    GEQ("GEQ", AoCategory.OPERATOR, 77),                // >=
-    // .>=
-    PLUS("PLUS", AoCategory.OPERATOR, 79),
-    // +*
-    MINUS("MINUS", AoCategory.OPERATOR, 81),
-    TIMES("TIMES", AoCategory.OPERATOR, 82),
-    // .*
-    // **
-    // ./
-    BACKSLASH("BACKSLASH", AoCategory.OPERATOR, 86), // \
-    // `
-     /* 
-	(** fof >> *)
-	scalarproduct = PCS.scalarproduct;  
-	elementproduct = PCS.elementproduct;  
-	elementquotient = PCS.elementquotient;  
-	transpose = PCS.transpose;  dtimes = PCS.dtimes;  
-	eeql = PCS.eeql;  eneq = PCS.eneq;  elss = PCS.elss;  
-	eleq = PCS.eleq;  egtr = PCS.egtr;  egeq = PCS.egeq
-     */
-    SYSTEM("SYSTEM", AoCategory.KEYWORD, 100),
-    SELF("SELF", AoCategory.KEYWORD, 101),
-    CHAR("CHAR", AoCategory.KEYWORD, 102),
-    CHAR8("CHAR8", AoCategory.KEYWORD, 103),
-    CHAR16("CHAR16", AoCategory.KEYWORD, 104),
-    CHAR32("CHAR32", AoCategory.KEYWORD, 105),
-    SHORTINT("SHORTINT", AoCategory.KEYWORD, 106),
-    INTEGER("INTEGER", AoCategory.KEYWORD, 107),
-    LONGINT("LONGINT", AoCategory.KEYWORD, 108),
-    HUGEINT("HUGEINT", AoCategory.KEYWORD, 109),
-    REAL("REAL", AoCategory.KEYWORD, 110),
-    LONGREAL("LONGREAL", AoCategory.KEYWORD, 111),
-    BOOLEAN("BOOLEAN", AoCategory.KEYWORD, 112),
-    SET("SET", AoCategory.KEYWORD, 113),
-    ANY("ANY", AoCategory.KEYWORD, 114),
-    ABS("ABS", AoCategory.KEYWORD, 115),
-    ASH("ASH", AoCategory.KEYWORD, 116),
-    CAP("CAP", AoCategory.KEYWORD, 117),
-    CHR("CHR", AoCategory.KEYWORD, 118),
-    ENTIER("ENTIER", AoCategory.KEYWORD, 119),
-    LEN("LEN", AoCategory.KEYWORD, 120),
-    LONG("LONG", AoCategory.KEYWORD, 121),
-    MAX("MAX", AoCategory.KEYWORD, 122),
-    MIN("MIN", AoCategory.KEYWORD, 123),
-    ODD("ODD", AoCategory.KEYWORD, 124),
-    ORD("ORD", AoCategory.KEYWORD, 125),
-    SHORT("SHORT", AoCategory.KEYWORD, 126),
-    SIZE("SIZE", AoCategory.KEYWORD, 127),
-    ASSERT("ASSERT", AoCategory.KEYWORD, 128),
-    COPY("COPY", AoCategory.KEYWORD, 129),
-    INC("INC", AoCategory.KEYWORD, 130),
-    DEC("DEC", AoCategory.KEYWORD, 131),
-    EXCL("EXCL", AoCategory.KEYWORD, 132),
-    HALT("HALT", AoCategory.KEYWORD, 133),
-    INCL("INCL", AoCategory.KEYWORD, 134),
-    NEW("NEW", AoCategory.KEYWORD, 135);
+    IF("IF", AoCategory.KEYWORD, 47),
+    CASE("CASE", AoCategory.KEYWORD, 48),
+    WHILE("WHILE", AoCategory.KEYWORD, 49),
+    REPEAT("REPEAT", AoCategory.KEYWORD, 50),
+    FOR("FOR", AoCategory.KEYWORD, 51),
+    LOOP("LOOP", AoCategory.KEYWORD, 52),
+    WITH("WITH", AoCategory.KEYWORD, 53),
+    EXIT("EXIT", AoCategory.KEYWORD, 54),
+    RETURN("RETURN", AoCategory.KEYWORD, 55),
+    ARRAY("ARRAY", AoCategory.KEYWORD, 56),
+    OBJECT("OBJECT", AoCategory.KEYWORD, 57),
+    RECORD("RECORD", AoCategory.KEYWORD, 58),
+    POINTER("POINTER", AoCategory.KEYWORD, 59),
+    BEGIN("BEGIN", AoCategory.KEYWORD, 60),
+    CONST("CONST", AoCategory.KEYWORD, 61),
+    TYPE("TYPE", AoCategory.KEYWORD, 62),
+    VAR("VAR", AoCategory.KEYWORD, 63),
+    PROCEDURE("PROCEDURE", AoCategory.KEYWORD, 64),
+    IMPORT("IMPORT", AoCategory.KEYWORD, 65),
+    MODULE("MODULE", AoCategory.KEYWORD, 66),
+    CODE("CODE", AoCategory.KEYWORD, 67),
+    COMMENT("COMMENT", AoCategory.COMMENT, 68),
+    WARNING("WARNING", AoCategory.WARNING, 69),
+    ERROR("ERROR", AoCategory.ERROR, 70),
+    BOOLEAN("BOOLEAN", AoCategory.TYPE, 71),
+    CHAR("CHAR", AoCategory.TYPE, 72),
+    SHORTINT("SHORTINT", AoCategory.TYPE, 73),
+    INTEGER("INTEGER", AoCategory.TYPE, 74),
+    LONGINT("LONGINT", AoCategory.TYPE, 75),
+    SET("SET", AoCategory.TYPE, 76),
+    SYSTEM("SYSTEM", AoCategory.SYSTEM, 80),
+    AWAIT("AWAIT", AoCategory.KEYWORD, 81),
+    DEFINITION("DEFINITION", AoCategory.KEYWORD, 82),
+    FINALLY("FINALLY", AoCategory.KEYWORD, 83),
+    IMPLEMENTS("IMPLEMENTS", AoCategory.KEYWORD, 84),
+    OPERATOR("OPERATOR", AoCategory.KEYWORD, 85),
+    REFINES("REFINES", AoCategory.KEYWORD, 86),
+    QMARK("?", AoCategory.OPERATOR, 87),
+    ENEQ(".#", AoCategory.OPERATOR, 88),
+    EEQL(".=", AoCategory.OPERATOR, 89),
+    ELSS(".<", AoCategory.OPERATOR, 90),
+    ELEQ(".<=", AoCategory.OPERATOR, 91),
+    EGTR(".>", AoCategory.OPERATOR, 92),
+    EGEQ(".>=", AoCategory.OPERATOR, 93),
+    DTIMES("+*", AoCategory.OPERATOR, 94),
+    ELEMENTPRODUCT(".*", AoCategory.OPERATOR, 95),
+    SCALARPRODUCT("**", AoCategory.OPERATOR, 96),
+    ELEMENTQUOTIENT("./", AoCategory.OPERATOR, 97),
+    BACKSLASH("\\", AoCategory.OPERATOR, 98),
+    TRANSPOSE("`", AoCategory.OPERATOR, 99),
+    EOF("EOF", AoCategory.WHITESPACE, 100),
+    SELF("SELF", AoCategory.POINTER, 101),
+    CHAR8("CHAR8", AoCategory.TYPE, 102),
+    CHAR16("CHAR16", AoCategory.TYPE, 103),
+    CHAR32("CHAR32", AoCategory.TYPE, 104),
+    HUGEINT("HUGEINT", AoCategory.TYPE, 105),
+    REAL("REAL", AoCategory.TYPE, 110),
+    LONGREAL("LONGREAL", AoCategory.TYPE, 111),
+    ANY("ANY", AoCategory.POINTER, 114),
+    ABS("ABS", AoCategory.SYSTEM, 115),
+    ASH("ASH", AoCategory.SYSTEM, 116),
+    CAP("CAP", AoCategory.SYSTEM, 117),
+    CHR("CHR", AoCategory.SYSTEM, 118),
+    ENTIER("ENTIER", AoCategory.SYSTEM, 119),
+    LEN("LEN", AoCategory.SYSTEM, 120),
+    LONG("LONG", AoCategory.SYSTEM, 121),
+    MAX("MAX", AoCategory.SYSTEM, 122),
+    MIN("MIN", AoCategory.SYSTEM, 123),
+    ODD("ODD", AoCategory.SYSTEM, 124),
+    ORD("ORD", AoCategory.SYSTEM, 125),
+    SHORT("SHORT", AoCategory.SYSTEM, 126),
+    SIZE("SIZE", AoCategory.SYSTEM, 127),
+    ASSERT("ASSERT", AoCategory.SYSTEM, 128),
+    COPY("COPY", AoCategory.SYSTEM, 129),
+    INC("INC", AoCategory.SYSTEM, 130),
+    DEC("DEC", AoCategory.SYSTEM, 131),
+    EXCL("EXCL", AoCategory.SYSTEM, 132),
+    HALT("HALT", AoCategory.SYSTEM, 133),
+    INCL("INCL", AoCategory.SYSTEM, 134),
+    NEW("NEW", AoCategory.SYSTEM, 135);
 
     private int id;
     private String name;

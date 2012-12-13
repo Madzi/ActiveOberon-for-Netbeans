@@ -8,7 +8,7 @@ import org.netbeans.spi.lexer.Lexer;
 import org.netbeans.spi.lexer.LexerRestartInfo;
 
 /**
- * @author deliseev
+ * @author Dmitry Eliseev
  */
 public class AoLanguageHierarchy extends LanguageHierarchy<AoTokenId> {
 
@@ -37,7 +37,7 @@ public class AoLanguageHierarchy extends LanguageHierarchy<AoTokenId> {
 
     @Override
     protected Lexer<AoTokenId> createLexer(LexerRestartInfo<AoTokenId> info) {
-        return new AoLexer(info);
+        return new AoWarpLexer(info);
     }
 
     @Override

@@ -4,8 +4,19 @@
     'http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd'>
 
 <fontscolors>
-    <fontcolor name="comment" default="comment" />
-    <fontcolor name="keyword" default="keywird" />
+    <fontcolor name="error" default="error" />
+    <fontcolor name="warning" default="warning" />
     <fontcolor name="whitespace" default="whitespace" />
     <fontcolor name="character" default="character" />
+    <fontcolor name="separator" default="separator" />
+    <fontcolor name="operator" default="operator" />
+    <fontcolor name="string" default="string" />
+    <fontcolor name="number" default="number" />
+    <fontcolor name="tag" default="tag" />
+    <fontcolor name="identifier" default="identifier" />
+    <fontcolor name="keyword" default="keyword" />
+    <fontcolor name="type" default="type" foreColor="00ff00" />
+    <fontcolor name="system" default="system" foreColor="00a0ff" />
+    <fontcolor name="pointer" default="pointer" />
+    <fontcolor name="comment" default="comment" />
 </fontscolors>

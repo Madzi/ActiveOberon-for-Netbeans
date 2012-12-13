@@ -4,7 +4,7 @@ import org.netbeans.api.lexer.Language;
 import org.netbeans.api.lexer.TokenId;
 
 /**
- * @author deliseev
+ * @author Dmitry Eliseev
  */
 public class AoTokenId implements TokenId {
 
